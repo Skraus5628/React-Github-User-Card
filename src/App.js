@@ -1,35 +1,22 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './App.css';
+import User from "./Components/User";
+import Followers from "./Components/Followers";
 
-class App extends Component{
-  constructor(){
-    super(
-      
-    )
+function App() {
 
-  }
+  return (
 
 
-  componentDidMount(){
-    axios.get('https://api.github.com/users/skraus5628')
-    .then(result =>{
-     console.log(result);
-  })
-  .catch(error =>{
-    console.log('error:', error)
-  })
-  }
+    <div className="App">
 
-  render(){
-    return(
-      <>
-      <h1>Github Users</h1>
-      </>
-    )
-  }
+     <h1>GitHub User Card</h1>
+          <User  />
+          <Followers />
 
+
+    </div>
+  );
 }
 
-export default App;
-
+export default App; 
