@@ -32,7 +32,9 @@ class Followers extends React.Component {
                 <FollowersCard key={follower.id}
                     img={follower.avatar_url} 
                     followers = {follower.login}
-                    bio = {follower.bio}
+                    github={follower.html_url}
+                    repos={follower.repos_url}
+                    // bio = {follower.bio}
                 />
            ))}
         </div>
