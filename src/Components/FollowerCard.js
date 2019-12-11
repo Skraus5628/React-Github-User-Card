@@ -18,7 +18,7 @@ const Card = styled.div`
 display: block;
 position: relative;
 flex-direction: column;
-height: 300px;
+height: 218px;
 width: 600px;
 margin-bottom: 5rem;
 border: 1px solid black;
